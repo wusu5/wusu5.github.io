@@ -100,7 +100,7 @@ const en: LocaleMessages = {
   },
   footer: {
     lastUpdated: 'Last updated',
-    builtWithPrism: 'Built with PRISM',
+    builtWithPrism: 'Wu Su Academic Website',
   },
 };
 
@@ -153,7 +153,7 @@ const zh: LocaleMessages = {
   },
   footer: {
     lastUpdated: '最近更新',
-    builtWithPrism: '由 PRISM 构建',
+    builtWithPrism: '苏武个人主页',
   },
 };
 
