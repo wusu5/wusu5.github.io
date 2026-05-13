@@ -209,12 +209,6 @@ function parseAuthors(authorsStr: string, highlightNames: string[]): Array<{ nam
       // Remove special markers from name
       name = name.replace(/[*#]/g, '');
 
-      // Handle "Last, First" format
-      if (name.includes(',')) {
-        const parts = name.split(',').map(p => p.trim());
-        name = `${parts[1]} ${parts[0]}`;
-      }
-
       name = cleanBibTeXString(name);
 
       // Check if this is the site owner (to highlight)
