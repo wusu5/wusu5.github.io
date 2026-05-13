@@ -26,20 +26,15 @@ export default function PublicationsList({ config, publications, embedded = fals
     const messages = useMessages();
     const [searchQuery, setSearchQuery] = useState('');
     const [selectedYear, setSelectedYear] = useState<number | 'all'>('all');
-    const [selectedType, setSelectedType] = useState<string | 'all'>('all');
+    const [selectedPreprint, setSelectedPreprint] = useState<'all' | 'preprint'>('all');
     const [showFilters, setShowFilters] = useState(false);
     const [expandedBibtexId, setExpandedBibtexId] = useState<string | null>(null);
     const [expandedAbstractId, setExpandedAbstractId] = useState<string | null>(null);
 
-    // Extract unique years and types for filters
+    // Extract unique years for filters.
     const years = useMemo(() => {
         const uniqueYears = Array.from(new Set(publications.map(p => p.year)));
         return uniqueYears.sort((a, b) => b - a);
-    }, [publications]);
-
-    const types = useMemo(() => {
-        const uniqueTypes = Array.from(new Set(publications.map(p => p.type)));
-        return uniqueTypes.sort();
     }, [publications]);
 
     // Filter publications
@@ -52,11 +47,11 @@ export default function PublicationsList({ config, publications, embedded = fals
                 pub.conference?.toLowerCase().includes(searchQuery.toLowerCase());
 
             const matchesYear = selectedYear === 'all' || pub.year === selectedYear;
-            const matchesType = selectedType === 'all' || pub.type === selectedType;
+            const matchesPreprint = selectedPreprint === 'all' || Boolean(pub.preprintUrl || pub.arxivId);
 
-            return matchesSearch && matchesYear && matchesType;
+            return matchesSearch && matchesYear && matchesPreprint;
         });
-    }, [publications, searchQuery, selectedYear, selectedType]);
+    }, [publications, searchQuery, selectedYear, selectedPreprint]);
 
     return (
         <motion.div
@@ -144,37 +139,34 @@ export default function PublicationsList({ config, publications, embedded = fals
                                     </div>
                                 </div>
 
-                                {/* Type Filter */}
+                                {/* Preprint Filter */}
                                 <div className="space-y-2">
                                     <label className="text-sm font-medium text-neutral-700 dark:text-neutral-300 flex items-center">
-                                        <BookOpenIcon className="h-4 w-4 mr-1" /> {messages.publications.type}
+                                        <BookOpenIcon className="h-4 w-4 mr-1" /> {messages.publications.preprint}
                                     </label>
                                     <div className="flex flex-wrap gap-2">
                                         <button
-                                            onClick={() => setSelectedType('all')}
+                                            onClick={() => setSelectedPreprint('all')}
                                             className={cn(
                                                 "px-3 py-1 text-xs rounded-full transition-colors",
-                                                selectedType === 'all'
+                                                selectedPreprint === 'all'
                                                     ? "bg-accent text-white"
                                                     : "bg-white dark:bg-neutral-800 text-neutral-600 hover:bg-neutral-100 dark:hover:bg-neutral-700"
                                             )}
                                         >
                                             {messages.common.all}
                                         </button>
-                                        {types.map(type => (
-                                            <button
-                                                key={type}
-                                                onClick={() => setSelectedType(type)}
-                                                className={cn(
-                                                    "px-3 py-1 text-xs rounded-full capitalize transition-colors",
-                                                    selectedType === type
-                                                        ? "bg-accent text-white"
-                                                        : "bg-white dark:bg-neutral-800 text-neutral-600 hover:bg-neutral-100 dark:hover:bg-neutral-700"
-                                                )}
-                                            >
-                                                {type.replace('-', ' ')}
-                                            </button>
-                                        ))}
+                                        <button
+                                            onClick={() => setSelectedPreprint('preprint')}
+                                            className={cn(
+                                                "px-3 py-1 text-xs rounded-full transition-colors",
+                                                selectedPreprint === 'preprint'
+                                                    ? "bg-accent text-white"
+                                                    : "bg-white dark:bg-neutral-800 text-neutral-600 hover:bg-neutral-100 dark:hover:bg-neutral-700"
+                                            )}
+                                        >
+                                            {messages.publications.preprint}
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -240,7 +232,37 @@ export default function PublicationsList({ config, publications, embedded = fals
                                     )}
 
                                     <div className="flex flex-wrap gap-2 mt-auto">
-                                        {pub.doi && (
+                                        {pub.pdfUrl && (
+                                            <a
+                                                href={pub.pdfUrl}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
+                                            >
+                                                {messages.publications.pdf}
+                                            </a>
+                                        )}
+                                        {pub.url && (
+                                            <a
+                                                href={pub.url}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
+                                            >
+                                                {messages.publications.url}
+                                            </a>
+                                        )}
+                                        {(pub.preprintUrl || pub.arxivId) && (
+                                            <a
+                                                href={pub.preprintUrl || `https://arxiv.org/abs/${pub.arxivId}`}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
+                                            >
+                                                {messages.publications.preprint}
+                                            </a>
+                                        )}
+                                        {pub.doi && !pub.url && (
                                             <a
                                                 href={`https://doi.org/${pub.doi}`}
                                                 target="_blank"

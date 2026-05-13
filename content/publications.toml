@@ -1,4 +1,3 @@
 type = "publication"
 title = "Publications"
-description = "Research papers and manuscripts in data assimilation, data fusion, high-dimensional statistics, and Earth-system applications."
 source = "publications.bib"

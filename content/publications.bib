@@ -1,87 +1,89 @@
-@misc{su2026physicsinformed,
-  selected = {true},
-  title = {Physics-informed Statistical Data Fusion for Reconstructing 3D Current Fields of Oceanic Eddies},
-  author = {Wu Su and H. Li and Z. Jing and Y. Qiu and Song Xi Chen},
-  year = {2026},
-  note = {Major revision for Journal of the American Statistical Association.},
-  description = {Physics-informed statistical data fusion for reconstructing three-dimensional current fields of oceanic eddies.},
-  keywords = {Data Fusion, Data Assimilation, Ocean Science, Physics-informed Statistical Learning}
-}
-
-@misc{su2026blocksignals,
-  selected = {true},
-  title = {High-dimensional Clustering and Signal Recovery under Block Signals},
-  author = {Wu Su and Y. Qiu},
-  year = {2026},
-  note = {Moderate revision for Journal of the American Statistical Association.},
-  description = {High-dimensional clustering and signal recovery under block signal structures and computational constraints.},
-  keywords = {High-dimensional Statistics, Clustering, Signal Recovery, Computational Constraints}
-}
-
-@misc{qian2026likelihood,
+@inproceedings{qian2026likelihood,
   title = {Likelihood Matching for Diffusion Models},
-  author = {L. Qian and Wu Su and Y. Huang and Song Xi Chen},
+  author = {L. Qian and W. Su and Y. Huang and S.X. Chen},
+  booktitle = {Proceedings of the 43rd International Conference on Machine Learning},
   year = {2026},
-  note = {Under review.},
-  description = {Likelihood matching methodology for diffusion models.},
-  keywords = {Diffusion Models, Statistical Learning, Likelihood}
+  volume = {306},
+  note = {Accepted},
+  url = {https://arxiv.org/abs/2508.03636},
+  preprint = {https://arxiv.org/abs/2508.03636},
+  pdf = {/papers/likelihood-matching-diffusion-models.pdf},
+  preview = {likelihood-matching.png},
+  abstract = {We propose a Likelihood Matching approach for training diffusion models by establishing an equivalence between the likelihood of the target data distribution and a likelihood along the sample path of the reverse diffusion. A quasi-likelihood approximation matches conditional mean and covariance for reverse transition densities, allowing score and Hessian functions to be estimated jointly. The paper introduces a stochastic sampler using both score and Hessian information, proves consistency and non-asymptotic convergence guarantees, and validates the method through empirical and simulation studies.},
+  keywords = {Diffusion Models, Likelihood, Statistical Learning, Generative Models}
 }
 
 @article{su2026glider,
-  selected = {true},
   title = {Glider Path Design and Control for Reconstructing Three-Dimensional Structures of Oceanic Mesoscale Eddies},
-  author = {Wu Su and X. E and Z. Jing and Song Xi Chen},
+  author = {W. Su and X. E and Z. Jing and S.X. Chen},
   year = {2026},
   journal = {Proceedings of the Royal Society A},
   volume = {482},
   number = {2333},
   pages = {20250533},
-  description = {Glider path design and control for reconstructing three-dimensional structures of oceanic mesoscale eddies.},
-  keywords = {Ocean Data Assimilation, Glider Path Design, Mesoscale Eddies, Data-driven Control}
+  doi = {10.1098/rspa.2025.0533},
+  url = {https://royalsocietypublishing.org/rspa/article/482/2333/20250533/480655/Glider-path-design-and-control-for-reconstructing},
+  pdf = {/papers/glider-path-design-mesoscale-eddies.pdf},
+  preview = {glider-path-design.png},
+  abstract = {Underwater gliders are autonomous in situ platforms used in oceanographic research. This work develops a framework for reconstructing the three-dimensional hydrographic structure of mesoscale eddies by combining thin plate spline interpolation, glider path design, and adaptive path control under realistic ocean currents. Simulated and real eddy evaluations show that the proposed interpolation improves temperature and salinity reconstruction, the designed paths balance coverage and sampling efficiency, and the control algorithm helps gliders maintain planned trajectories and return safely under strong currents.},
+  keywords = {Ocean Data Assimilation, Glider Path Design, Mesoscale Eddies, Adaptive Control}
 }
 
 @article{du2025threedimensional,
-  selected = {true},
   title = {Three-Dimensional Observations of a Mesoscale Eddy in the Kuroshio Extension Based on Multiple Platforms},
-  author = {T. Du and Y. Zhang and Wu Su and Z. Jing and Z. Chen and Y. Qiu and H. Zhang and S. Yang and W. Ma},
+  author = {T. Du and Y. Zhang and W. Su and Z. Jing and Z. Chen and Y. Qiu and H. Zhang and S. Yang and W. Ma},
   year = {2025},
   journal = {Scientific Data},
   volume = {12},
   pages = {2013},
-  description = {Three-dimensional observations of a mesoscale eddy in the Kuroshio Extension based on multiple observation platforms.},
-  keywords = {Ocean Observation, Mesoscale Eddies, Kuroshio Extension, Data Integration}
+  doi = {10.1038/s41597-025-06267-z},
+  url = {https://www.nature.com/articles/s41597-025-06267-z},
+  pdf = {/papers/mesoscale-eddy-kuroshio-extension.pdf},
+  preview = {mesoscale-eddy.png},
+  abstract = {This data descriptor reports an eddy-oriented survey of a cyclonic eddy in the Kuroshio Extension during September 2024. The campaign synchronized in situ sampling with the SWOT mission and combined shipboard measurements with observations from seven autonomous underwater gliders and twenty surface drifters. The resulting high-resolution, wide-coverage dataset captures the eddy's three-dimensional structure and supports SWOT calibration, eddy transport estimation, and validation of eddy-resolving ocean forecasting systems.},
+  keywords = {Ocean Observation, Mesoscale Eddies, Kuroshio Extension, SWOT, Gliders}
 }
 
 @article{weng2025enkf,
   title = {Using EnKF Data Assimilation to Improve Predictions of Volcanic Ash Dispersion},
-  author = {Z. Weng and L. Zhu and J. Li and Y. Zhang and X. Liu and Wu Su and H. Sun and X. Li},
+  author = {Z. Weng and L. Zhu and J. Li and Y. Zhang and X. Liu and W. Su and H. Sun and X. Li},
   year = {2025},
   journal = {Journal of Geophysical Research: Atmospheres},
   volume = {130},
   pages = {e2024JD042215},
-  description = {Using ensemble Kalman filter data assimilation to improve predictions of volcanic ash dispersion.},
+  doi = {10.1029/2024JD042215},
+  url = {https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024JD042215},
+  pdf = {/papers/volcanic-ash-enkf-data-assimilation.pdf},
+  preview = {volcanic-ash.png},
+  abstract = {This study presents an ensemble Kalman filter data assimilation method that combines satellite observations with the HYSPLIT volcanic ash dispersion model. Using the 2010 Eyjafjallajokull eruptions as a case study, the method improves forecasts of ash spatial distribution, mass loading, and cloud top height by continuously assimilating satellite observations. The results show that data assimilation can address poor model initialization and sometimes outperform corresponding satellite retrievals.},
   keywords = {Ensemble Kalman Filter, Data Assimilation, Volcanic Ash, Atmospheric Science}
 }
 
 @article{su2024carbonflux,
-  selected = {true},
   title = {A New Global Carbon Flux Estimation Methodology by Assimilation of Both In Situ and Satellite CO2 Observations},
-  author = {Wu Su and B. Wang and H. Chen and L. Zhu and X. Zheng and Song Xi Chen},
+  author = {W. Su and B. Wang and H. Chen and L. Zhu and X. Zheng and S.X. Chen},
   year = {2024},
   journal = {npj Climate and Atmospheric Science},
   volume = {7},
   pages = {287},
-  description = {A global carbon flux estimation methodology that assimilates both in situ and satellite CO2 observations.},
-  keywords = {Carbon Flux, Data Assimilation, EnKF, Satellite Observations, Climate Science}
+  doi = {10.1038/s41612-024-00824-w},
+  url = {https://www.nature.com/articles/s41612-024-00824-w},
+  pdf = {/papers/carbon-flux-assimilation-co2.pdf},
+  preview = {carbon-flux.png},
+  abstract = {This paper develops a multi-observation carbon assimilation system that integrates both satellite and ground-based CO2 observations. The method modifies the ensemble Kalman filter with different inflation factors for different observation-error types, addressing heterogeneity between satellite and in situ data. In validation experiments, the carbon flux derived from the system reduced error compared with existing products and produced terrestrial and ocean carbon-sink estimates consistent with Global Carbon Project benchmarks.},
+  keywords = {Carbon Flux, Data Assimilation, Ensemble Kalman Filter, Satellite Observations, Climate Science}
 }
 
 @inproceedings{tong2023domaingeneralization,
   title = {Distribution Free Domain Generalization},
-  author = {P. Tong and Wu Su and H. Li and J. Ding and H. Zhan and Song Xi Chen},
+  author = {P. Tong and W. Su and H. Li and J. Ding and H. Zhan and S.X. Chen},
   year = {2023},
   booktitle = {Proceedings of the 40th International Conference on Machine Learning},
   volume = {202},
   pages = {34369--34378},
-  description = {Distribution-free domain generalization methodology presented at ICML 2023.},
+  url = {https://proceedings.mlr.press/v202/tong23a.html},
+  pdf = {/papers/distribution-free-domain-generalization.pdf},
+  preview = {domain-generalization.png},
+  abstract = {This paper proposes a Distribution Free Domain Generalization procedure for classification. The method standardizes cross-domain and cross-class discrepancy statistics to avoid dominance by a few domains in training. It reformulates discrepancy through pairwise two-sample test statistics, provides distribution-free standardized metrics, establishes a theoretical generalization bound for multi-class classification, and demonstrates strong empirical performance with fewer hyperparameters.},
   keywords = {Domain Generalization, Machine Learning, Distribution-free Methods}
 }

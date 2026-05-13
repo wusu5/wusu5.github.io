@@ -84,13 +84,16 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
       doi: tags.doi,
       url: tags.url,
       code: tags.code,
+      pdfUrl: cleanBibTeXString(tags.pdf || tags.pdfurl),
+      arxivId: cleanBibTeXString(tags.eprint || tags.arxivid),
+      preprintUrl: cleanBibTeXString(tags.preprint || (tags.eprint ? `https://arxiv.org/abs/${tags.eprint}` : '')),
       abstract: cleanBibTeXString(tags.abstract),
       description: cleanBibTeXString(tags.description || tags.note),
       selected,
       preview,
 
       // Store original BibTeX (excluding custom fields)
-      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code']),
+      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code', 'pdf', 'pdfurl', 'preprint']),
     };
 
     // Clean up undefined fields
@@ -164,6 +167,10 @@ function buildNameVariants(name: string): Set<string> {
   const parts = cleaned.split(/\s+/).filter(Boolean);
   if (parts.length === 2) {
     variants.add(`${parts[1]} ${parts[0]}`);
+    variants.add(`${parts[0][0]} ${parts[1]}`);
+    variants.add(`${parts[0][0]}. ${parts[1]}`);
+    variants.add(`${parts[1]} ${parts[0][0]}`);
+    variants.add(`${parts[1]}, ${parts[0][0]}.`);
   }
 
   return variants;
