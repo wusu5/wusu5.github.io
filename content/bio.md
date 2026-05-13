@@ -1,5 +1,5 @@
-I am a PhD student at the School of Science, University of Example, advised by [Prof. Advisor One](https://example.com) and [Dr. Advisor Two](https://example.com).
+I am a Ph.D. candidate in Data Science at the Center for Data Science, Academy for Advanced Interdisciplinary Studies, Peking University, supervised by [Professor Song Xi Chen](https://www.songxichen.com/).
 
-Prior to this, I obtained a BSc degree with First Class Honours in Natural Science from the University of Example.
+My research focuses on statistically principled methods for data assimilation and data fusion, motivated by applications in Earth and ocean sciences. I am especially interested in scalable data assimilation systems, physics-informed statistical learning, and high-dimensional statistical methods under computational constraints.
 
-My current research focuses on investigating the mathematical principles of natural philosophy.
+My current work develops deployable methods for Earth-system modeling, including ocean prediction, carbon-flux estimation, and real-time observation and decision-making systems.

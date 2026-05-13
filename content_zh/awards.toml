@@ -1,27 +1,7 @@
 type = "card"
 title = "奖项"
-description = "我获得的荣誉与奖项。"
+description = "该页面目前已从导航中隐藏。"
 
 [[items]]
-title = "示例奖项"
-subtitle = "颁发机构"
-date = "2025"
-content = "奖项说明。"
-
-[[items]]
-title = "示例奖项"
-subtitle = "颁发机构"
-date = "2024"
-content = "奖项说明。"
-
-[[items]]
-title = "示例奖项"
-subtitle = "颁发机构"
-date = "2023"
-content = "奖项说明。"
-
-[[items]]
-title = "示例奖项"
-subtitle = "颁发机构"
-date = "2022"
-content = "奖项说明。"
+title = "奖项信息稍后补充"
+content = "保留该占位内容，便于后续需要时重新启用页面。"

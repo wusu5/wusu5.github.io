@@ -1,10 +1,7 @@
 type = "card"
 title = "教学"
-description = "我曾参与授课或助教的课程。"
+description = "该页面目前已从导航中隐藏。"
 
 [[items]]
-title = "示例课程"
-subtitle = "助教"
-date = "2024"
-content = "课程内容与职责简介。"
-tags = ["本科生", "计算机"]
+title = "教学信息稍后补充"
+content = "保留该占位内容，便于后续需要时重新启用页面。"

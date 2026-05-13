@@ -1,9 +1,7 @@
 type = "card"
 title = "学术服务"
-description = "专业服务与社区参与。"
+description = "该页面目前已从导航中隐藏。"
 
 [[items]]
-title = "审稿人"
-subtitle = "某期刊"
-date = "2024"
-content = "参与审阅论文。"
+title = "学术服务信息稍后补充"
+content = "保留该占位内容，便于后续需要时重新启用页面。"

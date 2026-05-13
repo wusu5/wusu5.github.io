@@ -1,9 +1,7 @@
 type = "card"
 title = "Services"
-description = "Professional services and community involvement."
+description = "This page is currently hidden from the site navigation."
 
 [[items]]
-title = "Reviewer"
-subtitle = "Journal Name"
-date = "2024"
-content = "Reviewed papers for..."
+title = "Service information will be added later"
+content = "This placeholder is kept so the page can be re-enabled when service information is ready."

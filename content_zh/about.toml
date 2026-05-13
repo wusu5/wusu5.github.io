@@ -1,18 +1,20 @@
 type = "about"
-title = "关于我"
+title = "关于"
 
 [profile]
 research_interests = [
-  "计算物理",
-  "数学原理",
-  "定理证明"
+  "数据同化",
+  "数据融合",
+  "高维统计",
+  "数学地球物理",
+  "物理信息统计学习"
 ]
 
 [[sections]]
 id = "about"
 type = "markdown"
 source = "bio.md"
-title = "关于我"
+title = "关于"
 
 [[sections]]
 id = "featured_publications"
@@ -20,9 +22,3 @@ type = "publications"
 title = "精选论文"
 filter = "selected"
 limit = 5
-
-[[sections]]
-id = "news"
-type = "list"
-title = "动态"
-source = "news.toml"

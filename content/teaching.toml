@@ -1,10 +1,7 @@
 type = "card"
 title = "Teaching"
-description = "Courses I have taught or assisted with."
+description = "This page is currently hidden from the site navigation."
 
 [[items]]
-title = "Example Course"
-subtitle = "Teaching Assistant"
-date = "2024"
-content = "Description of the course and responsibilities. Content of this course can be found [here](https://example.com)."
-tags = ["Undergraduate", "CS"]
+title = "Teaching information will be added later"
+content = "This placeholder is kept so the page can be re-enabled when teaching information is ready."

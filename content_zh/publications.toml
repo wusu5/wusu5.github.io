@@ -1,4 +1,4 @@
 type = "publication"
 title = "论文"
-description = "我的研究成果列表。"
+description = "数据同化、数据融合、高维统计及地球系统应用相关论文与工作论文。"
 source = "publications.bib"
