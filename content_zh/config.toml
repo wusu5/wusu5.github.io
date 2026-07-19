@@ -1,7 +1,7 @@
 [site]
 title = "苏武"
 description = "苏武的个人学术主页。"
-last_updated = "2026年5月13日"
+last_updated = "2026年7月19日"
 
 [author]
 name = "苏武"
@@ -16,18 +16,6 @@ title = "关于"
 type = "page"
 target = "about"
 href = "/"
-
-[[navigation]]
-title = "论文"
-type = "page"
-target = "publications"
-href = "/publications"
-
-[[navigation]]
-title = "报告"
-type = "page"
-target = "presentations"
-href = "/presentations"
 
 [[navigation]]
 title = "简历"

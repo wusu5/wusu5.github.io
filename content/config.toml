@@ -2,7 +2,7 @@
 title = "Wu Su"
 description = "Personal academic website of Wu Su, Ph.D. candidate in Data Science at Peking University."
 favicon = "/favicon.svg"
-last_updated = "May 13, 2026"
+last_updated = "July 19, 2026"
 
 [author]
 name = "Wu Su"
@@ -39,18 +39,6 @@ title = "About"
 type = "page"
 target = "about"
 href = "/"
-
-[[navigation]]
-title = "Publications"
-type = "page"
-target = "publications"
-href = "/publications"
-
-[[navigation]]
-title = "Presentations"
-type = "page"
-target = "presentations"
-href = "/presentations"
 
 [[navigation]]
 title = "CV"
