@@ -1,10 +1,10 @@
-我目前是北京大学前沿交叉学科研究院大数据科学研究中心博士生，导师为 [陈松蹊教授](https://www.songxichen.com/index.php/User)。
+我现于崂山国家实验室从事物理海洋学博士后研究，合作导师为 [荆钊教授](https://pol.ouc.edu.cn/jingzhao/main.htm)。2026 年获北京大学数据科学博士学位，博士生导师为 [陈松蹊教授](https://www.songxichen.com/index.php/User)。
 
 我的研究主要关注数据同化与数据融合中的统计方法，面向地球科学和海洋科学中的实际问题。我尤其关注部署数据同化系统、物理信息统计学习，以及计算约束下的高维统计方法。
 
-目前的研究工作围绕地球系统建模方法展开，包括海洋环境监测、碳通量估计，以及实时观测与决策系统。
+目前的研究工作围绕地球系统建模方法展开，包括海洋预测、碳通量估计，以及实时观测与决策系统。
 
-欢迎通过 [wusu@stu.pku.edu.cn](mailto:wusu@stu.pku.edu.cn) 联系我。
+欢迎通过 [suwu@lsnl.cn](mailto:suwu@lsnl.cn) 或 [wusu@stu.pku.edu.cn](mailto:wusu@stu.pku.edu.cn) 联系我。
 
 ## 论文
 
@@ -17,8 +17,14 @@
 - **Su, W.**, Wang, B., Chen, H., Zhu, L., Zheng, X., and Chen, S.X. (2024). [A New Global Carbon Flux Estimation Methodology by Assimilation of Both In Situ and Satellite CO2 Observations](https://doi.org/10.1038/s41612-024-00824-w). *npj Climate and Atmospheric Science*, 7, 287.
 - Tong, P., **Su, W.**, Li, H., Ding, J., Zhan, H., and Chen, S.X. (2023). [Distribution Free Domain Generalization](https://proceedings.mlr.press/v202/tong23a.html). *Proceedings of the 40th International Conference on Machine Learning*, 202, 34369–34378.
 
+## 预印本
+
+- Horvath, B., Su, Wen, **Su, Wu**, Wang, B., and Zhang, R.（按姓氏字母顺序排列）(2026+). [How Fast Do Signatures Learn? Statistical Theory and Applications for Path Regression](https://arxiv.org/abs/2607.17865).
+
 ## 邀请报告
 
+- **2026年7月** — *Glider Path Design and Control for Surveying an Oceanic Eddy*，第四届中国统计与数据科学联合会议，贵阳。
+- **2026年1月** — *Glider Path Design and Control for Surveying an Oceanic Eddy*，首届海洋统计与数据科学研讨会，厦门。
 - **2025年7月** — *Minimax Optimal Clustering under Block Signals and Computational Constraint*，第三届中国统计与数据科学联合会议，杭州。
 - **2025年4月** — *Multi-source Observation Global Carbon Flux Estimation using EnKF*，国家卫星气象中心邀请报告，北京。
 - **2024年11月** — *Glider Path Design and Control for Surveying an Oceanic Eddy*，第十二届全国概率统计会议，厦门。
