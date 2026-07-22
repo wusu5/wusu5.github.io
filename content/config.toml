@@ -1,17 +1,17 @@
 [site]
 title = "Wu Su"
-description = "Personal academic website of Wu Su, Ph.D. candidate in Data Science at Peking University."
+description = "Personal academic website of Wu Su, a postdoctoral researcher in Physical Oceanography at Laoshan National Laboratory."
 favicon = "/favicon.svg"
-last_updated = "May 13, 2026"
+last_updated = "July 22, 2026"
 
 [author]
 name = "Wu Su"
-title = "Ph.D. Candidate in Data Science"
-institution = "Peking University"
+title = "Postdoctoral Researcher in Physical Oceanography"
+institution = "Laoshan National Laboratory"
 avatar = "/photo.jpg"
 
 [social]
-email = "wusu@stu.pku.edu.cn"
+email = "suwu@lsnl.cn"
 google_scholar = ""
 orcid = ""
 github = ""
@@ -39,18 +39,6 @@ title = "About"
 type = "page"
 target = "about"
 href = "/"
-
-[[navigation]]
-title = "Publications"
-type = "page"
-target = "publications"
-href = "/publications"
-
-[[navigation]]
-title = "Presentations"
-type = "page"
-target = "presentations"
-href = "/presentations"
 
 [[navigation]]
 title = "CV"
