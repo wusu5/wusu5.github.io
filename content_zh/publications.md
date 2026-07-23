@@ -2,9 +2,9 @@
 
 ### 工作论文与预印本
 
-- **Su, W.**, Li, H., Jing, Z., Qiu, Y., and Chen, S.X. (2026+). Physics-informed Statistical Data Fusion for Reconstructing 3D Current Fields of Oceanic Eddies. *Journal of the American Statistical Association* 大修。
-- **Su, W.** and Qiu, Y. (2026+). [High-dimensional Clustering and Signal Recovery under Block Signals](https://arxiv.org/abs/2504.08332). *Journal of the American Statistical Association* 大修。
-- Horvath, B., Su, Wen, **Su, Wu**, Wang, B., and Zhang, R.（按姓氏字母顺序排列）(2026+). [How Fast Do Signatures Learn? Statistical Theory and Applications for Path Regression](https://arxiv.org/abs/2607.17865).
+- **Su, W.**, Li, H., Jing, Z., Qiu, Y., and Chen, S.X. (2026+). Physics-informed Statistical Data Fusion for Reconstructing 3D Current Fields of Oceanic Eddies. Major revision for the *Journal of the American Statistical Association*.
+- **Su, W.** and Qiu, Y. (2026+). [High-dimensional Clustering and Signal Recovery under Block Signals](https://arxiv.org/abs/2504.08332). Moderate revision for the *Journal of the American Statistical Association*.
+- Horvath, B., Su, Wen, **Su, Wu**, Wang, B., and Zhang, R. (in alphabetical order) (2026+). [How Fast Do Signatures Learn? Statistical Theory and Applications for Path Regression](https://arxiv.org/abs/2607.17865).
 
 ---
 
