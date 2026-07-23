@@ -41,6 +41,18 @@ target = "about"
 href = "/"
 
 [[navigation]]
+title = "Publications"
+type = "page"
+target = "publications"
+href = "/publications"
+
+[[navigation]]
+title = "Presentations"
+type = "page"
+target = "presentations"
+href = "/presentations"
+
+[[navigation]]
 title = "CV"
 type = "page"
 target = "cv"

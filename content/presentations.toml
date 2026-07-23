@@ -1,26 +1,3 @@
-type = "card"
+type = "text"
 title = "Presentations"
-
-[[items]]
-title = "Minimax Optimal Clustering under Block Signals and Computational Constraint"
-subtitle = "The Third Joint Conference on Statistics and Data Science in China"
-date = "2025/07"
-content = "Hangzhou, China."
-
-[[items]]
-title = "Multi-source Observation Global Carbon Flux Estimation using EnKF"
-subtitle = "Invited seminar, National Satellite Meteorological Center"
-date = "2025/04"
-content = "Beijing, China."
-
-[[items]]
-title = "Glider Path Design and Control for Surveying an Oceanic Eddy"
-subtitle = "The 12th National Probability and Statistics Conference of China"
-date = "2024/11"
-content = "Xiamen, China."
-
-[[items]]
-title = "Multi-source Observation Global Carbon Flux Estimation using EnKF"
-subtitle = "The Second Joint Conference on Statistics and Data Science in China"
-date = "2024/07"
-content = "Kunming, China."
+source = "presentations.md"

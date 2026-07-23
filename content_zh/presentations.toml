@@ -1,26 +1,3 @@
-type = "card"
+type = "text"
 title = "报告"
-
-[[items]]
-title = "Minimax Optimal Clustering under Block Signals and Computational Constraint"
-subtitle = "第三届中国统计与数据科学联合会议"
-date = "2025/07"
-content = "杭州。"
-
-[[items]]
-title = "Multi-source Observation Global Carbon Flux Estimation using EnKF"
-subtitle = "国家卫星气象中心邀请报告"
-date = "2025/04"
-content = "北京。"
-
-[[items]]
-title = "Glider Path Design and Control for Surveying an Oceanic Eddy"
-subtitle = "第十二届全国概率统计会议"
-date = "2024/11"
-content = "厦门。"
-
-[[items]]
-title = "Multi-source Observation Global Carbon Flux Estimation using EnKF"
-subtitle = "第二届中国统计与数据科学联合会议"
-date = "2024/07"
-content = "昆明。"
+source = "presentations.md"

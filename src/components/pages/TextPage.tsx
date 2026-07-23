@@ -47,6 +47,7 @@ export default function TextPage({ config, content, embedded = false }: TextPage
                                 {children}
                             </blockquote>
                         ),
+                        hr: () => <hr className="my-6 border-neutral-200 dark:border-neutral-800" />,
                         strong: ({ children }) => <strong className="font-semibold text-primary">{children}</strong>,
                         em: ({ children }) => <em className="italic text-neutral-600 dark:text-neutral-500">{children}</em>,
                     }}

@@ -1,3 +1,3 @@
-type = "publication"
+type = "text"
 title = "论文"
-source = "publications.bib"
+source = "publications.md"
