@@ -8,7 +8,7 @@
 
 ---
 
-- Qian, L., **Su, W.**, Huang, Y., and Chen, S.X. (2026). [Likelihood Matching for Diffusion Models](https://arxiv.org/abs/2508.03636). *Proceedings of the 43rd International Conference on Machine Learning*, 306. Accepted.
+- Qian, L., **Su, W.**, Huang, Y., and Chen, S.X. (2026). [Likelihood Matching for Diffusion Models](https://icml.cc/virtual/2026/poster/63121). *Proceedings of the 43rd International Conference on Machine Learning (ICML 2026)*.
 - Tong, P., **Su, W.**, Li, H., Ding, J., Zhan, H., and Chen, S.X. (2023). [Distribution Free Domain Generalization](https://proceedings.mlr.press/v202/tong23a.html). *Proceedings of the 40th International Conference on Machine Learning*, 202, 34369–34378.
 
 ## 交叉研究
